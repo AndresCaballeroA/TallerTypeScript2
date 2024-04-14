@@ -3,7 +3,7 @@ function mostrarSeries(series) {
     var table = document.createElement('table');
     table.classList.add('table');
     var headerRow = table.createTHead().insertRow();
-    headerRow.innerHTML = '<th>ID</th><th>Nombre</th><th>Canal</th><th>Temporadas</th>';
+    headerRow.innerHTML = '<th>#</th><th>Nombre</th><th>Canal</th><th>Temporadas</th>';
     series.forEach(function (serie) {
         var row = table.insertRow();
         row.classList.add('data-row');
